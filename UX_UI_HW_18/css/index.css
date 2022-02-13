@@ -90,6 +90,8 @@ h6{
 	background-position: center;
 	background-repeat: no-repeat;
 	position: relative;
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
 }
 
 .heroContents {
@@ -164,8 +166,12 @@ h6{
     margin-top: 0px;
   }
 }
-
-
+/* Mobile Query */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}
 
 /* Grid Styles */
 html, body 
